@@ -10,7 +10,14 @@
     let numero2 = Number(prompt(`Fale um segundo número:`))
 
     //PROCESSAMENTO
-    
+    if (numero1 !== numero2) {
+        const varivelN1 = numero1;
+        numero1 = numero2;
+        numero2 = varivelN1;
+        alert(`O numero 1 é ${numero1},O numero 2 é ${numero2}.`)
+    }else{
+        alert(`O numero 1 é ${numero1},O numero 2 é ${numero2}.`)
+    }
 
     //SAÍDA
 
