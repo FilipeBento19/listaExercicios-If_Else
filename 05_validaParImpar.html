@@ -1,0 +1,19 @@
+<script>
+    /*
+    PROBLEMA: VALIDA PAR OU ÍMPAR
+    Faça um script que peça um número inteiro e determine se ele é par ou ímpar.
+    */
+
+    //ENTRADA
+    const numero = Number(prompt(`Fale um Numero`));
+
+    //PROCESSAMENTO
+    const validar = (2 *(Math.ceil(numero / 2))) - numero;
+    if (validar == 0) {
+        document.write(`${numero} é par`);
+    } else if (validar != 0) {
+        document.write(`${numero} é impar`);
+    }
+    //SAÍDA
+    
+</script>

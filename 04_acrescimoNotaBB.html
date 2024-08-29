@@ -6,10 +6,15 @@
     */
 
     //ENTRADA
-
+    const nota1 = Number(prompt(`Qual a primeira nota do little brother?`));
+    const nota2 = Number(prompt(`Qual foi a segunda nota do little brother?`));
     
     //PROCESSAMENTO
-    
+    if (nota2 > nota1) {
+        const rapaiz = nota2 - nota1;
+        const ui = rapaiz * 0.25;
+        document.write(`O Acrescimo na nota do Big Brother será de ${ui}`);
+    }
     
     //SAÍDA
 
